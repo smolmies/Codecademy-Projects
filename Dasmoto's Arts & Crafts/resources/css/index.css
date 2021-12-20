@@ -1,0 +1,50 @@
+  * {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(223, 221, 223);
+  }
+   
+  img, h1 {
+    filter: drop-shadow(2px 2px 2px black);
+    margin: 0 10px;
+  }
+
+  h1 {
+    color: khaki;
+    text-align: center;
+    font-size: 100px;
+    font-weight: bold;
+    background-image: url("../images/pattern.webp");
+    padding: 10px;
+  }
+   
+   
+  h2 {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    padding: 5px;
+    border: 3px dashed white;
+    border-radius: 10px;
+    filter: drop-shadow(1px 1px 1px black);
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+   
+  #brushes {
+    background-color: mediumspringgreen;
+  }
+
+  #frames {
+    background-color: lightcoral;
+  }
+
+  #paint {
+    background-color: skyblue;
+  }
+   
+  span {
+    font-weight: bold;
+    color:blue;
+  }

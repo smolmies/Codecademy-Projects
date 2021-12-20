@@ -1,0 +1,148 @@
+* {
+    font-family: Helvetica, sans-serif;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: black;
+    color: seashell;
+    font-size: 22px;
+    vertical-align: middle;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 1.1rem;
+}
+
+
+header {
+    height: 69px;
+    width: 100%;
+    border-bottom: 1px solid seashell;
+    position: fixed;
+    top: 0;
+}
+
+header img {
+    height: 50px;
+    margin: 5px 10px;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+}
+
+header nav {
+    position: fixed;
+    top: 20px;
+    right: 10px;
+}
+
+nav a {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#mission {
+    height: 700px;
+    width: 1200px;
+    background-image: url('../images/img-mission-background.jpg');
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 70px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#mission div {
+    background-color: black;
+    color: seashell;
+    width: 100%;
+    padding: 0;
+}
+
+
+.tea-items {
+    width: 1000px;
+    display: flex;
+    margin: 20px auto;
+
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap; 
+
+}
+
+figure {
+    margin: 10px auto;
+}
+
+figcaption {
+    margin: 10px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+figure img {
+    height: 200px;
+    width: 300px;
+}
+
+
+#locations {
+    height: 500px;
+    width: 1200px;
+    background-image: url('../images/img-locations-background.jpg');
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px auto;
+
+}
+
+#locations > h3 {
+    color: seashell;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 15px auto;
+}
+
+.towns {
+    display: flex;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+}
+
+.towns .town {
+    opacity: 0.9;
+    width: 300px;
+    margin: 15px 20px;
+
+    display:inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact {
+    height: 200px;
+}
+
+footer p {
+    font-size: 18px;
+    float: left;
+    padding: 20px;
+}
+
+
