@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    
+}
+
+header {
+    width: 100%;
+    height: 125px;
+    position: fixed;
+    top: 0;
+    background-color: #7b92c5;
+    /* background-image: url("../images/starry-sky.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; */
+    box-shadow: 0 3px 3px darkgrey;
+}
+
+#msq {
+    position: fixed;
+    filter: opacity(1);
+    top: 10px;
+    left: 20px;
+    height: 50px;
+    width: 50px;
+}
+
+/* header img {
+    height: 125px;
+    filter: opacity(0.75);
+    width: auto;
+    position: fixed;
+    top: 0;
+    right: 0;
+} */
+
+header h1 {
+    font-size: 36px;
+    color:#0a0e38;
+    text-shadow: 1px 1px black;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav li {
+    list-style-type: none;
+    font-size: 22px;
+    padding: 20px;
+}
+
+nav a {
+    font-weight: bold;
+    color:#1c2163;
+    text-decoration: none;
+}
+main {
+    background-color: #f3f4fa;    
+    margin-top: 160px;
+}
+
+#banner {
+    background-color: #c0bcdb;
+    background-image: url("../images/starry-sky.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #040413;
+}
+
+
+#banner h3 {
+    padding: 10px 100px;
+    background-color: #ece4f4;
+
+}
+
+section {
+    margin: 50px 0;
+}
+
+#portfolio {
+    height: 500px;
+    border: 2px solid #1c2163;
+}
+
+#team {
+    height: 300px;
+    border: 2px solid #1c2163;
+}
+
+footer {
+    height: 150px;
+    width: 100%;
+    background-color: #040413;
+    color: #baabdc;
+    border-top: 3px solid darkgrey ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
