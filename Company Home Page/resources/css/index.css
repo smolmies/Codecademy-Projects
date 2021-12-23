@@ -2,70 +2,58 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: "Titillium Web", Times, serif;
+    font-size: 18px;
     text-align: center;
     
 }
 
 header {
     width: 100%;
-    height: 125px;
-    position: fixed;
-    top: 0;
-    background-color: #7b92c5;
-    /* background-image: url("../images/starry-sky.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    height:fit-content;
+    background-color: #655fac;
     box-shadow: 0 3px 3px darkgrey;
 }
 
 #msq {
-    position: fixed;
-    filter: opacity(1);
-    top: 10px;
-    left: 20px;
-    height: 50px;
-    width: 50px;
+    float: left;
+    height: 5rem;
+    width: 5rem;
 }
-
-/* header img {
-    height: 125px;
-    filter: opacity(0.75);
-    width: auto;
-    position: fixed;
-    top: 0;
-    right: 0;
-} */
 
 header h1 {
-    font-size: 36px;
+    font-family: "Bungee Shade", sans-serif;
+    letter-spacing: 3px;
+    font-size: 2.5rem;
     color:#0a0e38;
     text-shadow: 1px 1px black;
-    margin-top: 20px;
-    margin-bottom: 10px;
+    padding: 0 auto;
 }
 
+h2 {
+    font-size: 1.75rem;
+}
 nav ul {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
+    /* display: flex;
+    justify-content: space-around; */
 }
 
 nav li {
+    display: inline-block;
     list-style-type: none;
     font-size: 22px;
-    padding: 20px;
+    padding: 10px 20px;
 }
 
 nav a {
     font-weight: bold;
-    color:#1c2163;
-    text-decoration: none;
+    color:#0a0e38;
 }
+
 main {
     background-color: #f3f4fa;    
-    margin-top: 160px;
+    margin-top: 20px;
 }
 
 #banner {
@@ -73,7 +61,8 @@ main {
     background-image: url("../images/starry-sky.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 200px;
+    height: fit-content;
+    padding: 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -82,8 +71,9 @@ main {
 
 
 #banner h3 {
-    padding: 10px 100px;
+    padding: 10px 20px;
     background-color: #ece4f4;
+
 
 }
 
@@ -92,13 +82,81 @@ section {
 }
 
 #portfolio {
-    height: 500px;
+    background-color: #baabdc69;
     border: 2px solid #1c2163;
 }
 
-#team {
-    height: 300px;
+.features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.feature {
+    background-color: #1c2163;
+    height: auto;
+    min-width: 300px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px #0a0e38;
+    border: 2px solid #040413;
+}
+
+.feature img {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    margin: 5px;
+}
+
+.feature span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #baabdd;
+    text-shadow: 1px 1px #040413;
+}
+
+
+#our-team {
+    width: 100%;
     border: 2px solid #1c2163;
+    background-color: #ece4f4;
+}
+
+.team {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.employee {
+    display: inline-flex;
+    flex-direction: column;
+    width: 20%;
+    min-width: 200px;
+    height:auto;
+    background-color: #4f3468;
+    border: 2px solid #040413;
+    box-shadow: 2px 2px 2px #0a0e38;
+    margin: 20px;
+    padding-top: 10px;
+}
+
+.employee img {
+    height: 70%;
+    width: auto;
+    padding: 15px;
+}
+
+.employee h4 {
+    letter-spacing: 2px;
 }
 
 footer {
@@ -106,8 +164,45 @@ footer {
     width: 100%;
     background-color: #040413;
     color: #baabdc;
-    border-top: 3px solid darkgrey ;
+    border-top: 3px solid #040413 ;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
+
+
+@media only screen and (max-width: 640px) {
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    nav li {
+        display: block;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    .features {
+        padding: 0;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    header h1 {
+        font-size: 1.5rem;
+        letter-spacing: 0;
+    }
+}
+
