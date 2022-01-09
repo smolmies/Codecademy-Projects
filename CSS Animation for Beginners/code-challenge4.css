@@ -1,0 +1,44 @@
+.word1 {
+    color: #963CBDFF;
+    height: 450px;
+    /* apply a 5s delay and the alternate direction */
+    animation: textRotate 8s 5s alternate;
+  }
+  
+  .word2 {
+    color: #FF6F61FF;
+    height: 350px;
+    /* apply a 2s delay and the reverse direction */
+    animation: textRotate 8s 2s reverse;
+  }
+  
+  .word3 {
+    color: #C5299BFF;
+    height: 250px;
+    /* apply a 1s delay and the alternate-reverse direction */
+    animation: textRotate 8s 1s alternate-reverse;
+  }
+  
+  @keyframes textRotate{
+    100% {
+      transform: rotate(-180deg);
+    }
+  }
+  
+  .word {
+    width: 400;
+    position: absolute;
+    text-align: center;
+    font-weight: bold;
+    font-size: 24;
+    bottom: 0;
+    transform-origin: bottom;
+    transform: rotate(180deg);
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  body {
+    background-color: #FFE6FF;
+    overflow: hidden
+  }

@@ -1,0 +1,40 @@
+.square1 {
+    background-color: #F7CED7FF;
+    /* apply the linear timing function and the forwards fill mode */
+    animation: downThenUp 2s linear forwards;
+  }
+  
+  .square2 {
+    background-color: #F99FC9FF;
+    /* apply the ease-in timing function and the backwards fill mode */
+    animation: downThenUp 2s ease-in backwards;
+  }
+  
+  .square3 {
+    background-color: #EF6079FF;
+    /* apply the ease-out timing function and the both fill mode */
+    animation: downThenUp 2s ease-out both;
+  }
+  
+  @keyframes downThenUp{
+    0% {
+      transform: translate(0px, 200px);
+    }
+    50% {
+      transform: translate(0px, 400px) rotate(45deg);
+    }
+    100% {
+      transform: translate(0px, 200px);
+    }
+  }
+  
+  .square {
+    float: left;
+    margin: 10px 10px;
+    width: 50px;
+    height: 50px;
+  }
+  
+  body {
+    background-color: #F1F3FFFF
+  }

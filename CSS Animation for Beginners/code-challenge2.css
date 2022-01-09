@@ -1,0 +1,39 @@
+.x-axis {
+    /* apply the rightLeft animation with a duration of 2 seconds to the .x-axis element */
+    animation: rightLeft 2s;
+  }
+  
+  .y-axis {
+    /* apply the upDown animation with a duration of 1 second to the .y-axis element */
+    animation: upDown 1s;
+  }
+  
+  @keyframes rightLeft {
+    30% {
+      transform: translate(50px, 0px);
+    }
+    70% {
+      transform: translate(-50px, 0px);
+    }
+  }
+  
+  @keyframes upDown {
+    30% {
+      transform: translate(0px, -25px);
+    }
+    70% {
+      transform: translate(0px, 25px);
+    }
+  }
+  
+  .text {
+    margin: 50 75;
+    font-family: 'calibri';
+    font-weight: bold;
+    font-size: 48px;
+    color: #2BAE66;
+  }
+  
+  body {
+    background-color: #FCF6F5;
+  }
